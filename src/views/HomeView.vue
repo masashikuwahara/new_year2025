@@ -1,5 +1,5 @@
 <template>
-    <div class="container text-center mt-5">
+    <div class="container text-center">
       <h2>今年もよろしくお願いいたします</h2>
       <h3>おみくじをやってみる？</h3>
       <button class="btn btn-outline-danger mt-3" @click="drawOmikuji">おみくじを引く</button>
