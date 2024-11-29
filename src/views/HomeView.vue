@@ -2,10 +2,13 @@
     <div class="container text-center mt-5">
       <h2>今年もよろしくお願いいたします</h2>
       <h3>おみくじをやってみる？</h3>
-      <button class="btn btn-primary mt-3" @click="drawOmikuji">おみくじを引く</button>
-      <div v-if="result" class="mt-3">
-        <h3 class="alert alert-info">{{ result }}</h3>
-      </div>
+      <button class="btn btn-outline-danger mt-3" @click="drawOmikuji">おみくじを引く</button>
+      <!-- ふわっと表示追加 -->
+       <transition name="fade">
+        <div v-if="result" class="mt-3">
+          <h3 class="alert alert-warning">{{ result }}</h3>
+        </div>
+       </transition>
     </div>
 </template>
 
@@ -27,7 +30,11 @@ export default {
 };
 </script>
 
-
 <style>
-
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 </style>

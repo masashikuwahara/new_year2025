@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LastYearView from '@/views/LastYearView.vue'
-import FunnyCatView from '@/views/FunnyCatView.vue'
+import FunnyCatView from '@/views/GameView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,8 +17,8 @@ const router = createRouter({
       component: LastYearView,
     },
     {
-      path: '/cat',
-      name: 'cat',
+      path: '/game',
+      name: 'game',
       component: FunnyCatView,
     },
   ],

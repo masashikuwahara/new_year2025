@@ -3,7 +3,7 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/lastYear">LastYear</router-link> |
-    <router-link to="/cat">Cat</router-link> |
+    <router-link to="/game">Game</router-link> |
   </nav>
   <router-view/>
 </template>
@@ -22,10 +22,10 @@ nav {
 }
 
 nav a {
-  color: #d35400; /* 鮮やかな赤 */
+  color: #d35400;
 }
 nav a.router-link-exact-active {
-  color: #f39c12; /* 金色 */
+  color: #f39c12;
 }
 
 </style>
