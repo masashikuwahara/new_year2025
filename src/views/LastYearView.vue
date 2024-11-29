@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>昨年はこんなところへ行ってきました</h1>
+    <h2>昨年はこんなところへ行ってきました</h2>
     <ul class="nav nav-tabs">
       <li class="nav-item" v-for="(item, index) in items" :key="index">
         <a class="nav-link" :class="{ active: activeTab === index }" @click="activeTab = index">{{ item.name }}</a>
