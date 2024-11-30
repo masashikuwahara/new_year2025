@@ -17,20 +17,28 @@
 
 <script>
 import moriokaImage from '@/assets/morioka.jpg';
+import chuusonjiImage from '@/assets/chuusonji.jpg';
+import daisenryouImage from '@/assets/daisenryou.jpg';
+import toudaijiImage from '@/assets/toudaiji.jpg';
+import naraparkImage from '@/assets/narapark.jpg';
+import yoshimiImage from '@/assets/yoshimi.jpg';
+import shiroishiImage from '@/assets/shiroishi.jpg';
+import takashimaImage from '@/assets/takashima.jpg';
+import matsumotoImage from '@/assets/matsumoto.jpg';
 export default {
   data() {
     return {
       activeTab: 0,
       items: [
         { name: '盛岡城', image: moriokaImage },
-        { name: '中尊寺', image: },
-        { name: '大仙陵古墳', image: },
-        { name: '東大寺', image: },
-        { name: '奈良公園', image: },
-        { name: '吉見百穴', image: },
-        { name: '白石城', image: },
-        { name: '高島城', image: },
-        { name: '松本城', image: }
+        { name: '中尊寺', image: chuusonjiImage },
+        { name: '大仙陵古墳', image: daisenryouImage },
+        { name: '東大寺', image: toudaijiImage },
+        { name: '奈良公園', image: naraparkImage },
+        { name: '吉見百穴', image: yoshimiImage },
+        { name: '白石城', image: shiroishiImage },
+        { name: '高島城', image: takashimaImage },
+        { name: '松本城', image: matsumotoImage }
       ]
     }
   }
