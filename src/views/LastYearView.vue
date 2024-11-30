@@ -9,7 +9,7 @@
     <div class="tab-content">
       <div class="tab-pane" v-for="(item, index) in items" :key="index" :class="{ active: activeTab === index }">
         <h3>{{ item.name }} <br></h3> 
-        <img :src="item.image" alt="">
+        <img :src="item.image" :alt="item.name">
       </div>
     </div>
   </div>
@@ -23,14 +23,14 @@ export default {
       activeTab: 0,
       items: [
         { name: '盛岡城', image: moriokaImage },
-        { name: '中尊寺',  },
-        { name: '大仙陵古墳',  },
-        { name: '東大寺', },
-        { name: '奈良公園',  },
-        { name: '吉見百穴',  },
-        { name: '白石城',  },
-        { name: '高島城', },
-        { name: '松本城',  }
+        { name: '中尊寺', image: },
+        { name: '大仙陵古墳', image: },
+        { name: '東大寺', image: },
+        { name: '奈良公園', image: },
+        { name: '吉見百穴', image: },
+        { name: '白石城', image: },
+        { name: '高島城', image: },
+        { name: '松本城', image: }
       ]
     }
   }
