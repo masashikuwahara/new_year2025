@@ -51,6 +51,7 @@ img {
 }
 
 .nav-tabs {
+  justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
 }
