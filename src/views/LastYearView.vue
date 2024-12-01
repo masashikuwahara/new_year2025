@@ -25,6 +25,7 @@ import yoshimiImage from '@/assets/yoshimi.jpg';
 import shiroishiImage from '@/assets/shiroishi.jpg';
 import takashimaImage from '@/assets/takashima.jpg';
 import matsumotoImage from '@/assets/matsumoto.jpg';
+
 export default {
   data() {
     return {
