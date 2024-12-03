@@ -6,6 +6,9 @@
     <router-link to="/game">Game</router-link> |
   </nav>
   <router-view/>
+  <footer>
+    © All rights reserved by DayTripper.
+  </footer>
 </template>
 
 <style>
@@ -32,6 +35,16 @@ nav a.router-link-exact-active {
   color: #f39c12;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #a9a9a9;
+    text-align: center;
+    z-index: 10;
+  }
+
 @media screen and (min-width:480px) {
   #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -49,9 +62,20 @@ nav {
 nav a {
   color: #d35400;
 }
+
 nav a.router-link-exact-active {
   color: #f39c12;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #a9a9a9;
+    text-align: center;
+    z-index: 10;
+  }
 }
 
 </style>
