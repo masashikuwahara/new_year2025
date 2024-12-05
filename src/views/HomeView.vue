@@ -1,7 +1,9 @@
 <template>
   <carousel :items-to-show="1.0" :autoplay="2000" :loop="true" :wrapAround="true">
     <slide v-for="image in images" :key="image.id">
-      <img :src="image.url" :alt="image.alt">
+      <router-link :to="{ name: image.link, params: { id: image.id } }">
+        <img :src="image.url" :alt="image.alt">
+      </router-link>
     </slide>
     <template #addons>
       <navigation />
@@ -24,9 +26,9 @@
 <script>
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-import test1 from '@/assets/001.jpg';
-import test2 from '@/assets/002.jpg';
-import test3 from '@/assets/003.jpg';
+import carousel1 from '@/assets/001.jpg';
+import carousel2 from '@/assets/002.jpg';
+import carousel3 from '@/assets/003.jpg';
 
 export default {
   components: {
@@ -38,9 +40,9 @@ export default {
   data() {
     return {
       images: [
-        { id: 1, url: test1, alt: '画像1' },
-        { id: 2, url: test2, alt: '画像2' },
-        { id: 3, url: test3, alt: '画像3' }
+        { id: 1, url: carousel1, alt: '画像1', link: 'home' },
+        { id: 2, url: carousel2, alt: '画像2', link: 'lastyear' },
+        { id: 3, url: carousel3, alt: '画像3', link: 'game' }
       ],
       result: null, // おみくじの結果を格納
     };
@@ -63,4 +65,5 @@ export default {
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
+
 </style>
