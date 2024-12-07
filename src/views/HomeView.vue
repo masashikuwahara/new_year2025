@@ -2,7 +2,9 @@
   <carousel :items-to-show="1.0" :autoplay="2000" :loop="true" :wrapAround="true">
     <slide v-for="image in images" :key="image.id">
       <router-link :to="{ name: image.link, params: { id: image.id } }">
-        <img :src="image.url" :alt="image.alt">
+        <div class="car">
+          <img :src="image.url" :alt="image.alt">
+        </div>
       </router-link>
     </slide>
     <template #addons>
@@ -64,6 +66,13 @@ export default {
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
+}
+
+@media screen and (min-width:400px) {
+  .car {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 </style>
