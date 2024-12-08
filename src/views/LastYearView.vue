@@ -25,6 +25,7 @@ import yoshimiImage from '@/assets/yoshimi.jpg';
 import shiroishiImage from '@/assets/shiroishi.jpg';
 import takashimaImage from '@/assets/takashima.jpg';
 import matsumotoImage from '@/assets/matsumoto.jpg';
+import shirakawaImage from '@/assets/shirakawakomine.jpg';
 
 export default {
   data() {
@@ -39,7 +40,8 @@ export default {
         { name: '吉見百穴', image: yoshimiImage },
         { name: '白石城', image: shiroishiImage },
         { name: '高島城', image: takashimaImage },
-        { name: '松本城', image: matsumotoImage }
+        { name: '松本城', image: matsumotoImage },
+        { name: '白河小峰城', image: shirakawaImage }
       ]
     }
   }
