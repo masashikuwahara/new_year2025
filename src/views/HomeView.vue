@@ -68,7 +68,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (min-width:400px) {
+@media screen and (min-width:420px) {
   .car {
     width: 50%;
     margin: 0 auto;
