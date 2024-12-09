@@ -45,7 +45,7 @@ footer {
     z-index: 10;
   }
 
-@media screen and (min-width:400px) {
+@media screen and (min-width:420px) {
   #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
